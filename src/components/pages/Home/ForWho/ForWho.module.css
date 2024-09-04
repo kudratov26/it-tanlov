@@ -1,0 +1,44 @@
+.forwho {
+    display: flex;
+}
+
+.left_side {
+    width: 45%;
+}
+
+.right_side {
+    width: 55%;
+}
+
+.right_side>img {
+    width: 100%;
+    scale: 0.8;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+ul>li {
+    margin-left: 20px;
+}
+
+.pros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pro {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pro>span {
+    font-size: 18px;
+    color: #4b5563;
+    font-weight: 600;
+}

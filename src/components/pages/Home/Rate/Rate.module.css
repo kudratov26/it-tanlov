@@ -1,0 +1,13 @@
+.rate {
+    text-align: center;
+}
+
+.guide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.guide>span {
+    font-weight: normal;
+}

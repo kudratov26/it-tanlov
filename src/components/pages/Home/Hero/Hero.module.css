@@ -1,0 +1,89 @@
+.hero {
+    background-color: #f7fafc;
+    padding: 80px 0 90px;
+}
+
+.hero_section {
+    display: flex;
+    align-items: center;
+}
+
+.left_side {
+    width: 50%;
+}
+
+.right_side {
+    width: 50%;
+}
+
+.right_side>img {
+    width: 596px;
+}
+
+.subtitle {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px 8px 8px;
+    background-color: #e8f2ff;
+    border-radius: 20px;
+}
+
+.subtitle>span {
+    color: #1C64F2;
+}
+
+.check_mark {
+    width: 18px;
+}
+
+h1 {
+    font-size: 58px;
+    font-weight: 800;
+    overflow: wrap;
+    color: #233876;
+}
+
+span>img {
+    object-fit: cover;
+    border-radius: 20px;
+    height: 64px;
+}
+
+.girl>img {
+    width: 92px;
+}
+
+.family>img {
+    width: 74px;
+}
+
+.winners {
+    background-color: #e8f2ff;
+    padding: 7px 12px 7px 7px;
+    border-radius: 50px;
+    width: fit-content;
+    display: flex;
+}
+
+.winner {
+    width: 50px;
+}
+
+.winner>img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.winner:nth-child(2) {
+    z-index: 2;
+}
+
+.description {
+    margin-bottom: 50px;
+}
+
+.count {
+    font-size: 14px;
+}
