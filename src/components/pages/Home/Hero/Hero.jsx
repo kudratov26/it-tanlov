@@ -20,7 +20,28 @@ const Hero = () => {
                             <span>G‘oliblar munosib taqdirlanadi</span>
                         </div>
                         <div className="heading">
-                            <h1>“Kelajak ITniki” <span className={styles.girl}><img src={girl} alt="" /> </span> <br />
+                            <div>
+                                <div style={{display: 'flex', alignItems: 'center'}}>
+                                    <h1>“Kelajak ITniki”</h1>
+                                    <span className={styles.girl}><img src={girl} alt="" /></span>
+                                </div>
+                                <div style={{display: 'flex', alignItems: 'center'}}>
+                                    <span className={styles.family}><img src={family} alt="" /></span>
+                                    <h1>videoroliklar</h1>
+                                </div>
+                                <div style={{display: 'flex', alignItems: 'center'}}>
+                                    <h1>tanlovi</h1>
+                                    <div className={styles.winners}>
+                                        <div style={{display: 'flex', alignItems: 'center'}}>
+                                            <span className={styles.winner}><img src={person1} alt="" /></span>
+                                            <span className={styles.winner}><img src={person2} alt="" /></span>
+                                            <span className={styles.winner}><img src={person3} alt="" /></span>
+                                        </div>
+                                        <span>4 ta g'olib</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <h1>“Kelajak ITniki” <span className={styles.girl}><img src={girl} alt="" /> </span> <br />
                                 <span className={styles.family}><img src={family} alt="" /></span> videoroliklar <br />
                                 tanlovi
                                 <div className={styles.winners}>
@@ -29,7 +50,7 @@ const Hero = () => {
                                     <div className={styles.winner}><img src={person3} alt="" /></div>
                                     <span className={styles.count}>4 ta g'olib</span>
                                 </div>
-                            </h1>
+                            </h1> */}
                             <p className={`${styles.description} details`}>Yoshlar o‘rtasida IT ta’limni keng targ‘ib qilish maqsadida faol kontent mualliflar o‘rtasida "<span>Videoroliklar</span>" tanlovini e’lon qilamiz!</p>
                             <button className="btn btn2">Ishtirok etish</button>
                         </div>
