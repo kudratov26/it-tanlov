@@ -1,6 +1,10 @@
 import React from 'react'
 import styles from '../Footer/Footer.module.css'
 import subfooter from '/imgs/subfooter.png'
+import facebook from '/icons/facebook.svg'
+import instagram from '/icons/instagram.svg'
+import x from '/icons/x.svg'
+import youtube from '/icons/youtube.svg'
 
 function Footer() {
     return (
@@ -9,14 +13,14 @@ function Footer() {
                 <a className={styles.logo} href="it-tanlov.uz">IT-Tanlov.uz</a>
                 <p className={styles.announcement}>Yoshlar o‘rtasida IT ta’limni keng targ‘ib qilishda faol kontent mualliflar o‘rtasida "Videoroliklar" tanlovini e’lon qilamiz!</p>
                 <div className={styles.socials}>
-                    <div className=""></div>
-                    <div className=""></div>
-                    <div className=""></div>
-                    <div className=""></div>
+                    <div className={styles.social}><img src={facebook} alt="" /></div>
+                    <div className={styles.social}><img src={x} alt="" /></div>
+                    <div className={styles.social}><img src={instagram} alt="" /></div>
+                    <div className={styles.social}><img src={youtube} alt="" /></div>
                 </div>
                 <div className={styles.rights}>
                     <span>"First MA" 2024.</span>
-                    <span> <a href="it-tanlov.uz">Privacy Policy</a> | <a href="it-tanlov.uz">Terms&Conditions</a></span>
+                    <span className={styles.privacy}> <a href="it-tanlov.uz">Privacy Policy</a> | <a href="it-tanlov.uz">Terms&Conditions</a></span>
                 </div>
             </div>
             <div className={styles.subfooter}>

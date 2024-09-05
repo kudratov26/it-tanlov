@@ -32,6 +32,17 @@ footer {
     color: #b0b0bd;
 }
 
+.privacy {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.privacy>a {
+    font-size: inherit;
+    color: inherit;
+}
+
 .subfooter {
     width: 1200px;
     display: flex;
@@ -70,12 +81,13 @@ footer {
     margin: 20px 0 40px;
 }
 
-input {
+.input_area>input {
     padding: 25px 200px 25px 35px;
     border-radius: 15px;
     border: none;
     font-size: 18px;
     outline: none;
+    width: 100%;
 }
 
 .input_area {
@@ -84,7 +96,30 @@ input {
 
 .input_area>button {
     position: absolute;
-    right: 10%;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: auto;
+    border-radius: 50%;
+    background-color: #ffffff1f;
+    text-align: center;
+}
+
+.social>img {
+    width: 100%;
+    scale: 0.6;
 }
