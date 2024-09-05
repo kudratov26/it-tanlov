@@ -44,10 +44,6 @@ function Form() {
 
                     <button onClick={notify} className={style.button}>Yuborish</button>
                     <ToastContainer />
-                    <p style={{ fontSize: 12, marginTop: 20 }}>
-                        Never give out your password.
-                        <a href="#" style={{ textDecoration: 'underline', marginLeft: 3 }}>Report abuse</a>
-                    </p>
                 </div>
             </div>
         </div>
