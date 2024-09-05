@@ -52,7 +52,7 @@ const Hero = () => {
                                 </div>
                             </h1> */}
                             <p className={`${styles.description} details`}>Yoshlar o‘rtasida IT ta’limni keng targ‘ib qilish maqsadida faol kontent mualliflar o‘rtasida "<span>Videoroliklar</span>" tanlovini e’lon qilamiz!</p>
-                            <button className="btn btn2 btn3">Ishtirok etish</button>
+                            <a href="/submit"><button className="btn btn2 btn3">Ishtirok etish</button></a>
                         </div>
                     </div>
                     <div className={styles.right_side}>

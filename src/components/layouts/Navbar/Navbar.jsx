@@ -7,7 +7,7 @@ function Navbar() {
             <div className="container">
                 <div className={styles.navbar}>
                     <span className={styles.logo}>IT-Tanlov.uz</span>
-                    <button className="btn btn1">Ishtirok etish</button>
+                    <a href="/submit"><button className="btn btn1">Ishtirok etish</button></a>
                 </div>
             </div>
         </nav>

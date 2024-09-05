@@ -38,11 +38,6 @@ footer {
     gap: 15px;
 }
 
-.privacy>a {
-    font-size: inherit;
-    color: inherit;
-}
-
 .subfooter {
     width: 1200px;
     display: flex;

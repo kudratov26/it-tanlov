@@ -21,7 +21,7 @@ function ForWho() {
                         <p>IT sohasiga tegishli tushunchalar, sohadagi soʻnggi tendensiya va raqamlashtirish borasida aholiga yaratilayotgan imkoniyatlarni sodda, qiziqarli shu bilan birga kreativ uslubda taqdim etuvchi videolar.</p>
                     </ul>
                     <div className={styles.btns}>
-                        <button className='btn btn2'>Ishtirok etish</button>
+                        <a href="/submit"><button className='btn btn2'>Ishtirok etish</button></a>
                         <button className='btn btn_white'>Batafsil</button>
                     </div>
                     <div className={styles.pros}>
