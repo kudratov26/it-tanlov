@@ -21,18 +21,18 @@ const Hero = () => {
                         </div>
                         <div className="heading">
                             <div>
-                                <div style={{display: 'flex', alignItems: 'center'}}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                                     <h1>“Kelajak ITniki”</h1>
                                     <span className={styles.girl}><img src={girl} alt="" /></span>
                                 </div>
-                                <div style={{display: 'flex', alignItems: 'center'}}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                                     <span className={styles.family}><img src={family} alt="" /></span>
                                     <h1>videoroliklar</h1>
                                 </div>
-                                <div style={{display: 'flex', alignItems: 'center'}}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                                     <h1>tanlovi</h1>
                                     <div className={styles.winners}>
-                                        <div style={{display: 'flex', alignItems: 'center'}}>
+                                        <div style={{ display: 'flex', alignItems: 'center' }}>
                                             <span className={styles.winner}><img src={person1} alt="" /></span>
                                             <span className={styles.winner}><img src={person2} alt="" /></span>
                                             <span className={styles.winner}><img src={person3} alt="" /></span>
@@ -52,7 +52,7 @@ const Hero = () => {
                                 </div>
                             </h1> */}
                             <p className={`${styles.description} details`}>Yoshlar o‘rtasida IT ta’limni keng targ‘ib qilish maqsadida faol kontent mualliflar o‘rtasida "<span>Videoroliklar</span>" tanlovini e’lon qilamiz!</p>
-                            <button className="btn btn2">Ishtirok etish</button>
+                            <button className="btn btn2 btn3">Ishtirok etish</button>
                         </div>
                     </div>
                     <div className={styles.right_side}>

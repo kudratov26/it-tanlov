@@ -63,10 +63,43 @@ a {
     background-color: #1C64F2;
 }
 
+.btn3 {
+    padding: 12px 50px !important;
+}
+
+.btn_white {
+    padding: 12px 20px;
+    border: 1px solid #c7c4c4;
+    color: #000;
+    background-color: #fff;
+}
+
 .btn1:hover {
     background-color: #1C64F2;
 }
 
-.btn2:hover {
+.btn2:hover,
+.btn_white:hover {
     background-color: #1f1f1f;
+    color: #fff;
+}
+
+
+.slider-arrow>img {
+    background-color: #1C64F2;
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    text-align: center;
+}
+
+.swiper-button-prev {
+    left: 45%;
+}
+
+
+.swiper-button-next {
+    left: 50%;
 }

@@ -20,6 +20,10 @@ function ForWho() {
                         <li>Blogerlar o‘rtasida <span>"Raqamli kreativ ijodkorlar"</span></li>
                         <p>IT sohasiga tegishli tushunchalar, sohadagi soʻnggi tendensiya va raqamlashtirish borasida aholiga yaratilayotgan imkoniyatlarni sodda, qiziqarli shu bilan birga kreativ uslubda taqdim etuvchi videolar.</p>
                     </ul>
+                    <div className={styles.btns}>
+                        <button className='btn btn2'>Ishtirok etish</button>
+                        <button className='btn btn_white'>Batafsil</button>
+                    </div>
                     <div className={styles.pros}>
                         <div className={styles.pro}>
                             <img src={check} alt="" />

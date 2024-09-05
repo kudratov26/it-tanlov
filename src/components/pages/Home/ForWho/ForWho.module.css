@@ -42,3 +42,9 @@ ul>li {
     color: #4b5563;
     font-weight: 600;
 }
+
+.btns {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0 50px;
+}
