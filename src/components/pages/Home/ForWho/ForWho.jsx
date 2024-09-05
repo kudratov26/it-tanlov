@@ -22,7 +22,7 @@ function ForWho() {
                     </ul>
                     <div className={styles.btns}>
                         <a href="/submit"><button className='btn btn2'>Ishtirok etish</button></a>
-                        <button className='btn btn_white'>Batafsil</button>
+                        <button href="https://docs.google.com/document/d/1qECl0IqvfabVh4r-kQywZsYByGVaaI-7JaJIl-plkOM/edit?pli=1" className='btn btn_white'>Batafsil</button>
                     </div>
                     <div className={styles.pros}>
                         <div className={styles.pro}>
