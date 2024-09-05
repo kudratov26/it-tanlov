@@ -43,16 +43,16 @@ const Carousel = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={styles.carouselItem}>
-                <p className={styles.carouselItemText}>
+              <div className={styles.carouselItem} style={{background: '#111928'}}>
+                <p className={styles.carouselItemText} style={{color: '#fff'}}>
                   Ushbu tanlov yoshlar o‘rtasida IT‘ga bo‘lgan qiziqishni yanada orttirish va xalqimiz IT savodxonligini oshirishga yordam beradi degan umiddamiz.
                 </p>
                 <div className={styles.carouselItemUser}>
                   <span>
                     <img src="https://picsum.photos/100/100" alt="" />
                   </span>
-                  <h3 className={styles.name}>Rustam Karimjonov</h3>
-                  <p className={styles.rank}>Raqamli texnologiyalar vazirining o'rinbosari</p>
+                  <h3 className={styles.name} style={{color: '#fff'}}>Rustam Karimjonov</h3>
+                  <p className={styles.rank} style={{color: '#999'}}>Raqamli texnologiyalar vazirining o'rinbosari</p>
                 </div>
               </div>
             </SwiperSlide>

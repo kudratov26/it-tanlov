@@ -1,0 +1,38 @@
+.wrap{
+  width: 100%;
+  min-height: 100vh;
+  background: no-repeat url(https://cdn.forms.office.net/forms/formsresources/intelligence/themes/hack-registration2.png) 100% / cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  background-attachment: fixed;
+}
+.form{
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px 1px #22222240;
+  background: linear-gradient(to bottom, #F4D5C7 1%, #FDF6F390 15%);
+  padding: 50px;
+}
+.label{
+  display: flex;
+  flex-direction: column;
+}
+.label:not(:first-child){
+  margin-top: 50px;
+}
+.input{
+  margin: 20px 0 0 15px;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+.button{
+  padding: 10px 25px;
+  margin-top: 50px;
+  font-size: 15px;
+  color: #fff;
+  background: #D34302;
+  border-radius: 8px;
+  border: none;
+}
