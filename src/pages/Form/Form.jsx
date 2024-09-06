@@ -18,28 +18,28 @@ function Form() {
                             1. Ismingiz
                             <span style={{ color: 'red', marginLeft: 3 }}>*</span>
                         </p>
-                        <input className={style.input} type="text" placeholder='Enter your name' name="name" />
+                        <input className={style.input} type="text" placeholder='Ismingizni kiriting' name="name" required />
                     </label>
                     <label className={style.label}>
                         <p>
                             2. Telefon raqamingiz
                             <span style={{ color: 'red', marginLeft: 3 }}>*</span>
                         </p>
-                        <input className={style.input} type="text" placeholder='Enter your name' name="name" />
+                        <input className={style.input} type="tel" placeholder='Telefon raqamingizni kiriting' name="tel" required />
                     </label>
                     <label className={style.label}>
                         <p>
                             3. E-mail
                             <span style={{ color: 'red', marginLeft: 3 }}>*</span>
                         </p>
-                        <input className={style.input} type="text" placeholder='Enter your name' name="name" />
+                        <input className={style.input} type="email" placeholder='E-mailingizni kiriting' name="email" required />
                     </label>
                     <label className={style.label}>
                         <p>
                             4. Video manzilni kiriting
                             <span style={{ color: 'red', marginLeft: 3 }}>*</span>
                         </p>
-                        <input className={style.input} type="text" placeholder='Enter your link' name="name" />
+                        <input className={style.input} type="text" placeholder='Video linkni kiriting' name="link" required />
                     </label>
 
                     <button onClick={notify} className={style.button}>Yuborish</button>
