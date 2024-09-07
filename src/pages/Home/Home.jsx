@@ -8,7 +8,7 @@ import Footer from '../../components/layouts/Footer/Footer'
 function Home() {
     return (
         <>
-            <Navbar />
+            <Navbar isParticipates={false} container={"container"} />
             <Hero />
             <ForWho />
             <Rate />
