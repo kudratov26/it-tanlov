@@ -4,13 +4,15 @@
 
 .grid_box {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 390px);
-    justify-content: space-between;
-    row-gap: 35px;
+    grid-template-columns: repeat(auto-fit, 390px);
+    justify-content: center;
+    gap: 35px;
     margin-top: 100px;
+    border: 2px solid red;
 }
 
 .video {
+    border: 2px solid blue;
     padding: 15px;
     width: 390px;
     transition: all .3s;
@@ -39,7 +41,10 @@
     justify-content: space-between;
     margin: 6px 0 25px;
 }
-
+.details>h4{
+    display: flex;
+    gap: 10px;
+}
 .details>h4,
 .details>span {
     font-size: 14px;

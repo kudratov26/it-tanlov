@@ -183,133 +183,133 @@ import "react-toastify/dist/ReactToastify.css";
 import { useState } from "react";
 
 function Form() {
-  const [formData, setFormData] = useState({
-    full_name: "",
-    phone: "",
-    email: "",
-    video_link: "",
-  });
+    const [formData, setFormData] = useState({
+        full_name: "",
+        phone: "",
+        email: "",
+        video_link: "",
+    });
 
-  const notify = (message, type = "success") => {
-    if (type === "success") toast.success(message);
-    else toast.error(message);
-  };
+    const notify = (message, type = "success") => {
+        if (type === "success") toast.success(message);
+        else toast.error(message);
+    };
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    try {
-        const response = await fetch('http://195.2.84.169:2005/partner/', {
-            mode: "no-cors",
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData)
-        }).then(res => res.json())
-            .then(res => console.log(res))
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-        console.log(response);
-        
-        // if (response.ok) {
-        //     notify('Yuborildi!');
-        // } else {
-        //     console.log('Error Response:', data);
-        //     notify('Xato yuz berdi!', 'error');
-        // }
-    } catch (error) {
-        console.error('Error:', error);
-        notify('Serverga ulanishda xato!', 'error');
-    }
-  };
+        try {
+            const response = await fetch('http://195.2.84.169:2005/partner/', {
+                mode: "no-cors",
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', },
+                body: JSON.stringify(formData)
 
-  return (
-    <div className={style.wrap}>
-      <div className="container">
-        <form onSubmit={handleSubmit} className={style.form}>
-          <h2 style={{ fontWeight: "bold" }}>
-            Videoroliklar tanlovida ishtirok eting
-          </h2>
-          <p style={{ fontSize: 14, margin: "15px 0" }}>
-            <span style={{ color: "red", marginRight: 3 }}>*</span>
-            Required
-          </p>
-          <h3 style={{ color: "#BA3B02", fontWeight: "bold" }}>
-            Ma'lumotlaringizni to‘ldiring
-          </h3>
-          <label className={style.label}>
-            <p>
-              1. Ismingiz
-              <span style={{ color: "red", marginLeft: 3 }}>*</span>
-            </p>
-            <input
-              className={style.input}
-              type="text"
-              placeholder="Ismingizni kiriting"
-              name="full_name"
-              required
-              value={formData.full_name}
-              onChange={handleChange}
-            />
-          </label>
-          <label className={style.label}>
-            <p>
-              2. Telefon raqamingiz
-              <span style={{ color: "red", marginLeft: 3 }}>*</span>
-            </p>
-            <input
-              className={style.input}
-              type="tel"
-              placeholder="Telefon raqamingizni kiriting"
-              name="phone"
-              required
-              value={formData.phone}
-              onChange={handleChange}
-            />
-          </label>
-          <label className={style.label}>
-            <p>
-              3. E-mail
-              <span style={{ color: "red", marginLeft: 3 }}>*</span>
-            </p>
-            <input
-              className={style.input}
-              type="email"
-              placeholder="E-mailingizni kiriting"
-              name="email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </label>
-          <label className={style.label}>
-            <p>
-              4. Video manzilni kiriting Mangu-Host.uz Support, [9/7/24 6:13 PM]
-              <span style={{ color: "red", marginLeft: 3 }}>*</span>
-            </p>
-            <input
-              className={style.input}
-              type="text"
-              placeholder="Video linkni kiriting"
-              name="video_link"
-              required
-              value={formData.video_link}
-              onChange={handleChange}
-            />
-          </label>
+            })
+                .then(res => res.json())
+                .then(res => console.log(res))
 
-          <button type="submit" className={style.button}>
-            Yuborish
-          </button>
-          <ToastContainer />
-        </form>
-      </div>
-    </div>
-  );
+            alert("1-chi response ", response);
+
+            if (response.ok) {
+                notify('Yuborildi!');
+            } else {
+                console.log('Error Response:', data);
+                notify('Xato yuz berdi!', 'error');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            notify('Serverga ulanishda xato!', 'error');
+        }
+    };
+
+    return (
+        <div className={style.wrap}>
+            <div className="container">
+                <form onSubmit={handleSubmit} className={style.form}>
+                    <h2 style={{ fontWeight: "bold" }}>
+                        Videoroliklar tanlovida ishtirok eting
+                    </h2>
+                    <p style={{ fontSize: 14, margin: "15px 0" }}>
+                        <span style={{ color: "red", marginRight: 3 }}>*</span>
+                        Required
+                    </p>
+                    <h3 style={{ color: "#BA3B02", fontWeight: "bold" }}>
+                        Ma'lumotlaringizni to‘ldiring
+                    </h3>
+                    <label className={style.label}>
+                        <p>
+                            1. Ismingiz
+                            <span style={{ color: "red", marginLeft: 3 }}>*</span>
+                        </p>
+                        <input
+                            className={style.input}
+                            type="text"
+                            placeholder="Ismingizni kiriting"
+                            name="full_name"
+                            required
+                            value={formData.full_name}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label className={style.label}>
+                        <p>
+                            2. Telefon raqamingiz
+                            <span style={{ color: "red", marginLeft: 3 }}>*</span>
+                        </p>
+                        <input
+                            className={style.input}
+                            type="tel"
+                            placeholder="Telefon raqamingizni kiriting"
+                            name="phone"
+                            required
+                            value={formData.phone}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label className={style.label}>
+                        <p>
+                            3. E-mail
+                            <span style={{ color: "red", marginLeft: 3 }}>*</span>
+                        </p>
+                        <input
+                            className={style.input}
+                            type="email"
+                            placeholder="E-mailingizni kiriting"
+                            name="email"
+                            required
+                            value={formData.email}
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label className={style.label}>
+                        <p>
+                            4. Video manzilni kiriting
+                            <span style={{ color: "red", marginLeft: 3 }}>*</span>
+                        </p>
+                        <input
+                            className={style.input}
+                            type="text"
+                            placeholder="Video linkni kiriting"
+                            name="video_link"
+                            required
+                            value={formData.video_link}
+                            onChange={handleChange}
+                        />
+                    </label>
+
+                    <button type="submit" className={style.button}>
+                        Yuborish
+                    </button>
+                    <ToastContainer />
+                </form>
+            </div>
+        </div>
+    );
 }
 
 export default Form;
