@@ -6,6 +6,9 @@ import styles from './Carousel.module.css'
 import { Navigation } from 'swiper/modules'
 import arrow_left from '/icons/arrow_left.png'
 import arrow_right from '/icons/arrow_right.png'
+import rustam from '/imgs/rustam.png'
+import shuxrat from '/imgs/shuxrat.png'
+import sadullo from '/imgs/sadullo.png'
 
 const Carousel = () => {
   return (
@@ -35,7 +38,7 @@ const Carousel = () => {
                 </p>
                 <div className={styles.carouselItemUser}>
                   <span>
-                    <img src="https://picsum.photos/100/100" alt="" />
+                    <img src={rustam} alt="" />
                   </span>
                   <h3 className={styles.name}>Rustam Karimjonov</h3>
                   <p className={styles.rank}>Raqamli texnologiyalar vazirining o'rinbosari</p>
@@ -43,16 +46,30 @@ const Carousel = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={styles.carouselItem} style={{background: '#111928'}}>
-                <p className={styles.carouselItemText} style={{color: '#fff'}}>
-                  Ushbu tanlov yoshlar o‘rtasida IT‘ga bo‘lgan qiziqishni yanada orttirish va xalqimiz IT savodxonligini oshirishga yordam beradi degan umiddamiz.
+              <div className={styles.carouselItem} style={{ background: '#111928' }}>
+                <p className={styles.carouselItemText} style={{ color: '#fff' }}>
+                  "Kelajak ITniki" tanlovida ishtirok etish ortidan yoshlar o‘zlarida mavjud yaratuvchanlik qobiliyatlarini charxlab borishlari mumkin bo‘ladi
                 </p>
                 <div className={styles.carouselItemUser}>
                   <span>
-                    <img src="https://picsum.photos/100/100" alt="" />
+                    <img src={shuxrat} alt="" />
                   </span>
-                  <h3 className={styles.name} style={{color: '#fff'}}>Rustam Karimjonov</h3>
-                  <p className={styles.rank} style={{color: '#999'}}>Raqamli texnologiyalar vazirining o'rinbosari</p>
+                  <h3 className={styles.name} style={{ color: '#fff' }}>Shuxrat Sattorov</h3>
+                  <p className={styles.rank} style={{ color: '#999' }}>Raqamli ta'limni rivojlantirish markazi direktori</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.carouselItem}>
+                <p className={styles.carouselItemText}>
+                  Men o‘quvchilar o‘rtasida bo‘ladigan tanlov jarayonlarida ishtirok etaman va adolatli baholash bo‘lishiga yordam beraman.
+                </p>
+                <div className={styles.carouselItemUser}>
+                  <span>
+                    <img src={sadullo} alt="" />
+                  </span>
+                  <h3 className={styles.name}>Sa'dullo Quronov</h3>
+                  <p className={styles.rank}>Bolalar yozuvchisi</p>
                 </div>
               </div>
             </SwiperSlide>
@@ -63,21 +80,7 @@ const Carousel = () => {
                 </p>
                 <div className={styles.carouselItemUser}>
                   <span>
-                    <img src="https://picsum.photos/100/100" alt="" />
-                  </span>
-                  <h3 className={styles.name}>Rustam Karimjonov</h3>
-                  <p className={styles.rank}>Raqamli texnologiyalar vazirining o'rinbosari</p>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.carouselItem}>
-                <p className={styles.carouselItemText}>
-                  Ushbu tanlov yoshlar o‘rtasida IT‘ga bo‘lgan qiziqishni yanada orttirish va xalqimiz IT savodxonligini oshirishga yordam beradi degan umiddamiz.
-                </p>
-                <div className={styles.carouselItemUser}>
-                  <span>
-                    <img src="https://picsum.photos/100/100" alt="" />
+                    <img src={rustam} alt="" />
                   </span>
                   <h3 className={styles.name}>Rustam Karimjonov</h3>
                   <p className={styles.rank}>Raqamli texnologiyalar vazirining o'rinbosari</p>

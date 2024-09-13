@@ -1,6 +1,9 @@
 nav {
     padding: 20px 0;
     background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 .navbar {
@@ -8,20 +11,27 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-.links{
+
+.links {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.links>a{
+
+.links>a {
     font-size: 16px;
     font-weight: 500;
     transition: all .3s;
+    border-bottom: 1px solid transparent;
 }
+
 .logo {
     font-size: 20px;
     font-weight: 700;
 }
-.links>a:hover{
-    font-weight: 600;
+
+.links>a:hover,
+.links>a:focus {
+    color: #5c5c5c;
+    border-bottom: 1px solid #c0c0c0;
 }

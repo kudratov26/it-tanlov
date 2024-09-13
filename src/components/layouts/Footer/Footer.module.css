@@ -52,15 +52,15 @@ footer {
     padding: 50px;
 }
 
-.left_side {
-    width: 50%;
-}
-
 .right_side {
     width: 50%;
 }
 
-.right_side>img {
+.left_side {
+    width: 50%;
+}
+
+.left_side>img {
     width: 100%;
 }
 
@@ -70,10 +70,14 @@ footer {
     color: #fff;
 }
 
-.left_side>p {
+.right_side>p {
     color: #fff;
     font-size: 18px;
     margin: 20px 0 40px;
+}
+
+.input_area {
+    position: relative;
 }
 
 .input_area>input {
@@ -83,10 +87,6 @@ footer {
     font-size: 18px;
     outline: none;
     width: 100%;
-}
-
-.input_area {
-    position: relative;
 }
 
 .input_area>button {
@@ -117,4 +117,30 @@ footer {
 .social>img {
     width: 100%;
     scale: 0.6;
+}
+
+@media screen and (max-width: 982px) {
+    .subfooter {
+        width: 750px;
+        padding: 30px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .right_side>p {
+        font-size: 14px;
+    }
+
+    .input_area>input {
+        padding: 15px 145px 15px 15px;
+        font-size: 14px;
+    }
+
+    .input_area>button {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 8px 18px;
+    }
 }

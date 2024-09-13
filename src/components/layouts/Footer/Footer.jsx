@@ -24,10 +24,10 @@ function Footer() {
                 </div>
             </div>
             <div className={styles.subfooter}>
-                <div className={styles.right_side}>
+                <div className={styles.left_side}>
                     <img src={subfooter} alt="" />
                 </div>
-                <div className={styles.left_side}>
+                <div className={styles.right_side}>
                     <h2 className={styles.title}>Tanlov yangiliklaridan xabardor bo‘ling</h2>
                     <p>Elektron pochta manzilingizni kiriting va yangiliklarga obuna bo‘ling.</p>
                     <div className={styles.input_area}>

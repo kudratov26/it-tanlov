@@ -8,15 +8,14 @@
     justify-content: center;
     gap: 35px;
     margin-top: 100px;
-    border: 2px solid red;
 }
 
 .video {
-    border: 2px solid blue;
     padding: 15px;
     width: 390px;
     transition: all .3s;
     border-radius: 12px;
+    border: 1px solid #ddd;
 }
 
 .video img {
@@ -29,11 +28,19 @@
     padding: 8px;
 }
 
+.img_side {
+    position: relative;
+}
 
-.description h3 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1f2a37;
+.participant {
+    position: absolute;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.2px;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .details {
@@ -41,13 +48,15 @@
     justify-content: space-between;
     margin: 6px 0 25px;
 }
-.details>h4{
+
+.details>h4 {
     display: flex;
     gap: 10px;
 }
+
 .details>h4,
 .details>span {
-    font-size: 14px;
+    font-size: 15px;
     color: #606060;
 }
 
