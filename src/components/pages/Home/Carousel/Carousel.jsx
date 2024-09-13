@@ -11,6 +11,18 @@ import shuxrat from '/imgs/shuxrat.png'
 import sadullo from '/imgs/sadullo.png'
 
 const Carousel = () => {
+  const responsiveHandler = () => {
+    const w = window.innerWidth;
+    if (w > 1300) {
+      return 3
+    }
+    else if (w > 1000 && w < 1300) {
+      return 2
+    }
+    else {
+      return 1
+    }
+  }
   return (
     <div className={styles.carousel_sec}>
       <div className={styles.text_area}>
@@ -21,7 +33,7 @@ const Carousel = () => {
         <div className={styles.carouselWrap}>
           <Swiper
             spaceBetween={40}
-            slidesPerView={3}
+            slidesPerView={responsiveHandler()}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}
             navigation={{
@@ -98,7 +110,7 @@ const Carousel = () => {
           </div>
         </div>
       </div >
-    </div>
+    </div >
   )
 }
 

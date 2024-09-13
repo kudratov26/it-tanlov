@@ -48,3 +48,27 @@ ul>li {
     gap: 15px;
     margin: 15px 0 50px;
 }
+
+@media screen and (max-width: 768px) {
+    .forwho {
+        flex-direction: column;
+    }
+
+    .left_side,
+    .right_side {
+        width: 100%;
+    }
+
+    .left_side {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .right_side>img {
+        scale: 1;
+    }
+}

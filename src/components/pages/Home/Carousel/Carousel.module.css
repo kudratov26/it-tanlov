@@ -19,6 +19,11 @@
   max-width: 65vw;
   padding-bottom: 200px;
   position: relative;
+
+}
+
+.swiper-wrapper {
+  align-items: stretch !important;
 }
 
 .carouselItem {
@@ -82,3 +87,21 @@
   gap: 10px;
   justify-content: center;
 }
+
+/* @media screen and (max-width: 576px) { */
+/* .swiper-container {
+    width: 576px;
+  } */
+/* } */
+/* 
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+} */
+/* 
+@media screen and (max-width: 1200px) {
+  .swiper-container {
+    width: 1200px;
+  }
+} */

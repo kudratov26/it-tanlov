@@ -32,9 +32,9 @@ function Videos() {
 
     return (
         <>
-            <Navbar isParticipates={true} container={"container_2"} />
+            <Navbar isParticipates={true} container={"container"} />
             <div className={styles.videos}>
-                <div className="container_2">
+                <div className="container">
                     <h2 className="title">Videoroliklar tanlovi</h2>
                     <div className={styles.grid_box}>
                         {partners.length > 0 ? (

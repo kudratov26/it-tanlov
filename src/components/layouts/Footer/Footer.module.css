@@ -39,7 +39,8 @@ footer {
 }
 
 .subfooter {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     background-color: #1C64F2;
     gap: 90px;
@@ -119,28 +120,63 @@ footer {
     scale: 0.6;
 }
 
-@media screen and (max-width: 982px) {
+@media screen and (max-width: 768px) {
+    footer {
+        height: 1600px;
+    }
+
     .subfooter {
-        width: 750px;
+        max-width: 768px;
         padding: 30px;
+        flex-direction: column;
+        position: static;
+        transform: translateX(0);
+        margin-bottom: 100px;
     }
 
-    .title {
-        font-size: 28px;
+    .left_side {
+        width: 100%;
+        padding: 20px 40px;
     }
 
-    .right_side>p {
-        font-size: 14px;
+    .right_side {
+        width: 100%;
+        text-align: center;
+    }
+
+    .input_area {
+        text-align: start;
+        max-width: 464px;
     }
 
     .input_area>input {
+        width: 100%;
+        height: 70px;
         padding: 15px 145px 15px 15px;
         font-size: 14px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .right_side>p {
+        font-size: 18px;
     }
 
     .input_area>button {
         font-size: 14px;
         font-weight: 600;
         padding: 8px 18px;
+        max-width: none;
+        width: 145px;
+        height: 50px;
+        right: 10px;
+    }
+
+    .rights {
+        margin-top: 250px;
+        flex-direction: column-reverse;
+        gap: 30px;
     }
 }

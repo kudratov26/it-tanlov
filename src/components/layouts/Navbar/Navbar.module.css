@@ -1,9 +1,29 @@
+/* Main dimmer effect */
+.dimmer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+    /* Below the off_screen but above the rest of the content */
+}
+
+/* Dimmed nav */
+.navDimmed {
+    filter: brightness(0.5);
+    /* Dim the nav when menu is open */
+}
+
+/* Navigation bar */
 nav {
     padding: 20px 0;
     background: #fff;
     position: sticky;
     top: 0;
-    z-index: 9;
+    z-index: 99;
+    transition: background-color 0.3s ease, filter 0.3s ease;
 }
 
 .navbar {
@@ -12,26 +32,89 @@ nav {
     align-items: center;
 }
 
-.links {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.links>a {
-    font-size: 16px;
-    font-weight: 500;
-    transition: all .3s;
-    border-bottom: 1px solid transparent;
-}
-
 .logo {
     font-size: 20px;
     font-weight: 700;
 }
 
-.links>a:hover,
-.links>a:focus {
+.links a {
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.links a:hover,
+.links a:focus {
     color: #5c5c5c;
     border-bottom: 1px solid #c0c0c0;
+}
+
+.ham_menu {
+    display: none;
+}
+
+/* Off-screen menu */
+.off_screen {
+    position: fixed;
+    display: block;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    top: 0;
+    right: -100vw;
+    /* Starts off-screen */
+    transition: right 0.5s ease, opacity 0.3s ease;
+    z-index: 100;
+    /* Above the dimmed nav */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.off_screen.show {
+    right: 0;
+    /* Slides in smoothly */
+    opacity: 1;
+}
+
+/* Hamburger links */
+.ham_links {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.ham_links a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+
+.ham_links a:hover {
+    color: #1c64f2;
+}
+
+.ham_menu_open {
+    padding-right: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 88px;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    .links {
+        display: none;
+    }
+
+    .nav_btn {
+        display: none;
+    }
+
+    .ham_menu {
+        display: block;
+        z-index: 9;
+    }
 }
