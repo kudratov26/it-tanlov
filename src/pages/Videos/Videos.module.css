@@ -69,12 +69,12 @@
     background-color: #dddddd;
 }
 
-.description>button {
+.description button {
     opacity: 0;
     width: 100%;
 }
 
-.video:hover .description>button {
+.video:hover .description button {
     opacity: 1;
 }
 
@@ -96,4 +96,10 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .description button {
+        opacity: 1;
+    }
 }
