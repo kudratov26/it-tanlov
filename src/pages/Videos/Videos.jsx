@@ -10,7 +10,7 @@ function Videos() {
     useEffect(() => {
         const getPartners = async () => {
             try {
-                const response = await fetch("https://grscan.uz/partners", {
+                const response = await fetch("https://grscan.uz/partners?limit=20", {
                     method: 'GET',
                     headers: { 'Content-Type': 'application/json' },
                 });
