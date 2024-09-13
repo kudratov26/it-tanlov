@@ -25,7 +25,7 @@ function Navbar({ isParticipates, container }) {
                 <div className={container}>
                     <div className={styles.navbar}>
                         <span className={styles.logo}>
-                            <a href="/">IT-Tanlov.uz</a>
+                            <a href="it-tanlov.uz">IT-Tanlov.uz</a>
                         </span>
                         <div className={styles.links}>
                             <a href="/">Bosh sahifa</a>

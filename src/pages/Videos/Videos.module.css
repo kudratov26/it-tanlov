@@ -24,6 +24,11 @@
     border-radius: 12px;
 }
 
+.attention {
+    color: #606060;
+    font-size: 15px;
+}
+
 .description {
     padding: 8px;
 }
@@ -34,7 +39,7 @@
 
 .participant {
     position: absolute;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     color: #fff;
     letter-spacing: 0.2px;

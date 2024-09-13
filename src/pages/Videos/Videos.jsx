@@ -10,12 +10,11 @@ function Videos() {
     useEffect(() => {
         const getPartners = async () => {
             try {
-                const response = await fetch("http://195.2.84.169:7070/partners", {
+                const response = await fetch("https://grscan.uz/partners", {
                     method: 'GET',
                     headers: { 'Content-Type': 'application/json' },
                 });
                 const data = await response.json();
-                console.log(data);
 
                 if (data.StatusCode === 200 && data.Data && Array.isArray(data.Data.Partners)) {
                     setPartners(data.Data.Partners);
@@ -32,10 +31,13 @@ function Videos() {
 
     return (
         <>
-            <Navbar isParticipates={true} container={"container"} />
+            <Navbar container={"container"} />
             <div className={styles.videos}>
                 <div className="container">
-                    <h2 className="title">Videoroliklar tanlovi</h2>
+                    <div className={styles.text_area}>
+                        <h2 className="title">Videoroliklar tanlovi</h2>
+                        <p className={styles.attention}>Hurmatli foydalanuvchi barcha ishtirokchilar mediamahsulotlari bilan tanishib chiqib, ovoz berish tugmasini bosgan holda o‘zingiz loyiq deb bilgan ishtirokchiga ovoz bering!</p>
+                    </div>
                     <div className={styles.grid_box}>
                         {partners.length > 0 ? (
                             partners.map((partner, index) => (
@@ -51,11 +53,11 @@ function Videos() {
                                             <h4>{partner.full_name}</h4>
                                             <span>Ovozlar soni: {partner.score}</span>
                                         </div>
-                                        <button className='btn btn2'>
-                                            <a href={`https://t.me/ittanlovuzbot?start=vote_${partner.id}`} target='_blank' rel='noopener noreferrer'>
+                                        <a href={`https://t.me/ittanlovuzbot?start=vote_${partner.id}`} target='_blank' rel='noopener noreferrer'>
+                                            <button className='btn btn2'>
                                                 Ovoz berish
-                                            </a>
-                                        </button>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             ))

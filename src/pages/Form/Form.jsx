@@ -203,7 +203,7 @@ function Form() {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://195.2.84.169:2005/partner/', {
+            const response = await fetch('https://grscan.uz/partners', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', },
                 body: JSON.stringify(formData)

@@ -7,13 +7,11 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 98;
-    /* Below the off_screen but above the rest of the content */
 }
 
 /* Dimmed nav */
 .navDimmed {
     filter: brightness(0.5);
-    /* Dim the nav when menu is open */
 }
 
 /* Navigation bar */
@@ -35,6 +33,12 @@ nav {
 .logo {
     font-size: 20px;
     font-weight: 700;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .links a {
