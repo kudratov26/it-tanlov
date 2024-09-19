@@ -132,6 +132,7 @@ footer {
         position: static;
         transform: translateX(0);
         margin-bottom: 100px;
+        padding-bottom: 80px;
     }
 
     .left_side {
@@ -152,7 +153,7 @@ footer {
     .input_area>input {
         width: 100%;
         height: 70px;
-        padding: 15px 145px 15px 15px;
+        padding: 15px 160px 15px 15px;
         font-size: 14px;
     }
 

@@ -15,7 +15,6 @@ function Videos() {
                     headers: { 'Content-Type': 'application/json' },
                 });
                 const data = await response.json();
-
                 if (data.StatusCode === 200 && data.Data && Array.isArray(data.Data.Partners)) {
                     setPartners(data.Data.Partners);
                 } else {

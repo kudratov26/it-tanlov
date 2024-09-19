@@ -203,22 +203,17 @@ function Form() {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://grscan.uz/partners', {
+            const response = await fetch('https://grscan.uz/partner', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', },
                 body: JSON.stringify(formData)
 
             })
                 .then(res => res.json())
-                .then(res => console.log(res))
-
-            alert("1-chi response ", response);
-
             if (response.ok) {
                 notify('Yuborildi!');
             } else {
-                console.log('Error Response:', data);
-                notify('Xato yuz berdi!', 'error');
+                notify('Xato yuz berdi!', error);
             }
         } catch (error) {
             console.error('Error:', error);

@@ -8,18 +8,15 @@
 .carousel {
   display: flex;
   align-items: center;
-  padding: 0 100px;
-  margin: 70px 0;
+  margin-top: 70px;
   justify-content: center;
-
+  margin-bottom: 200px;
 }
 
 .carouselWrap {
   width: 100%;
   max-width: 65vw;
-  padding-bottom: 200px;
   position: relative;
-
 }
 
 .swiper-wrapper {
@@ -87,21 +84,3 @@
   gap: 10px;
   justify-content: center;
 }
-
-/* @media screen and (max-width: 576px) { */
-/* .swiper-container {
-    width: 576px;
-  } */
-/* } */
-/* 
-@media screen and (min-width: 768px) {
-  .swiper-container {
-    width: 768px;
-  }
-} */
-/* 
-@media screen and (max-width: 1200px) {
-  .swiper-container {
-    width: 1200px;
-  }
-} */

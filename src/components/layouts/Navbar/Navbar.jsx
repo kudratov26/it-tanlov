@@ -68,9 +68,9 @@ function Navbar({ isParticipates, container }) {
                     />
                 </div>
                 <div className={styles.ham_links}>
-                    <a href="/">Bosh sahifa</a>
+                    <a href="https://www.it-tanlov.uz/">Bosh sahifa</a>
                     <a href="/videos">Ovoz berish</a>
-                    {!isParticipates && <a href="/submit"><button className='btn btn1'>Ishtirok etish</button></a>}
+                    <a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__hxJuahUOVBIRzNHWFlWRUpONFlFNlRSQjRQWjEySy4u&route=shorturl"><button className='btn btn1'>Ishtirok etish</button></a>
                 </div>
             </div>
         </>

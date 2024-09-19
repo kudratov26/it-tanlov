@@ -105,16 +105,6 @@ a {
     text-align: center;
 }
 
-/* 
-.swiper-button-prev {
-    left: 45%;
-}
-
-
-.swiper-button-next {
-    left: 50%;
-} */
-
 .hidden {
     display: none;
 }
@@ -138,7 +128,16 @@ a {
     width: 100%;
 }
 
+.off_screen__active {
+    right: 0;
+}
+
 @media screen and (max-width: 768px) {
+    .container {
+        max-width: 746px;
+        padding: 0 15px;
+    }
+
     .title {
         font-size: 24px;
         font-weight: 800;
@@ -150,6 +149,9 @@ a {
     }
 }
 
-.off_screen__active {
-    right: 0;
+@media screen and (max-width: 585px) {
+    .container {
+        max-width: 565px;
+        padding: 0 10px;
+    }
 }
