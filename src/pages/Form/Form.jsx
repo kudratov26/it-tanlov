@@ -210,13 +210,12 @@ function Form() {
 
             })
                 .then(res => res.json())
-            if (response.ok) {
+            if (response.StatusCode == 201 || response.StatusCode == 200 || response.Description == "OK") {
                 notify('Yuborildi!');
             } else {
-                notify('Xato yuz berdi!', error);
+                toast.error(response.Data);
             }
         } catch (error) {
-            console.error('Error:', error);
             notify('Serverga ulanishda xato!', 'error');
         }
     };
