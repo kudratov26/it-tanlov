@@ -16,6 +16,12 @@
   padding: 50px;
 }
 
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+}
+
 .label {
   display: flex;
   flex-direction: column;
@@ -42,4 +48,25 @@
   background: #D34302;
   border-radius: 8px;
   border: none;
+}
+
+.attention {
+  font-weight: bold;
+  color: #BA3B02;
+}
+
+@media screen and (max-width:768px) {
+  .form {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .attention {
+    font-weight: 600;
+    font-size: 16px;
+  }
 }

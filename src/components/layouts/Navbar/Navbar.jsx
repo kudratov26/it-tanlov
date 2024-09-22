@@ -37,7 +37,7 @@ function Navbar({ isParticipates, container }) {
                                 <button className={`${styles.nav_btn} btn btn1`}>Ishtirok etish</button>
                             </a>
                         ) : (
-                            <span className="hidden"></span>
+                            <span className={styles.illusion}>Ishtirok etish</span>
                         )}
 
                         <div className={styles.ham_menu}>
@@ -70,7 +70,7 @@ function Navbar({ isParticipates, container }) {
                 <div className={styles.ham_links}>
                     <a href="https://www.it-tanlov.uz/">Bosh sahifa</a>
                     <a href="/videos">Ovoz berish</a>
-                    <a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__hxJuahUOVBIRzNHWFlWRUpONFlFNlRSQjRQWjEySy4u&route=shorturl"><button className='btn btn1'>Ishtirok etish</button></a>
+                    <a href="/submit"><button className='btn btn1'>Ishtirok etish</button></a>
                 </div>
             </div>
         </>
