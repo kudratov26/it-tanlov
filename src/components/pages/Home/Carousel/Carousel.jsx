@@ -34,8 +34,6 @@ const Carousel = () => {
           <Swiper
             spaceBetween={40}
             slidesPerView={responsiveHandler()}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
             navigation={{
               prevEl: ".swiper-button-prev",
               nextEl: ".swiper-button-next",
